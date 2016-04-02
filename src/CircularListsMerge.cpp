@@ -20,7 +20,7 @@ pointing towards the first node.
 Note : Return -1 for Invalid Inputs like NULL;
 
 Input : head1 and head2 are Addresses of Two Circular Linked Lists heads .
-Output :Return Length of New SLL .Modify the head1 value, such that it now points to 
+Output :Return Length of New SLL .Modify the head1 value, such that it now points to
 Merged Sorted Circular SLL .
 
 Difficulty : Medium
@@ -34,5 +34,7 @@ struct node{
 };
 int merge_circularlists(struct node **head1, struct node **head2){
 	//Returns Length of merged Sorted circular SLL and also points *head1 to final SLL .
+	if((head1)==NULL && (head2)==NULL)
+        return NULL;
 	return -1;
 }
